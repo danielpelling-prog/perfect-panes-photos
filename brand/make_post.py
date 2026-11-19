@@ -26,14 +26,28 @@ def strip(t,d,line,W,H,bar,white):
     s='★★★★★  5.0 on Google'
     d.text((W-60-d.textlength(line,font=fs),y0+int(bar*0.22)),line,font=fs,fill='white')
     d.text((W-60-d.textlength(s,font=f3),y0+int(bar*0.58)),s,font=f3,fill='white')
+
+def strip_big(t,d,service,town,W,H,bar,white):
+    """Taller strip for the 4:5 Instagram image: service line large across the top, logo and town underneath."""
+    y0=H-bar; pad=54
+    size=66
+    while size>30 and d.textlength(service,font=ImageFont.truetype(B,size))>W-2*pad: size-=1
+    fs=ImageFont.truetype(B,size)
+    d.text((pad,y0+22+(66-size)//2),service,font=fs,fill='white')
+    lh=96; lw=int(white.width*lh/white.height); ly=y0+bar-lh-22
+    L=white.resize((lw,lh),Image.LANCZOS); t.paste(L,(pad-6,ly),L)
+    f3=ImageFont.truetype(B,40); f4=ImageFont.truetype(R,34)
+    d.text((W-pad-d.textlength(town,font=f3),ly+2),town,font=f3,fill='white')
+    s2='★★★★★  5.0 on Google'
+    d.text((W-pad-d.textlength(s2,font=f4),ly+52),s2,font=f4,fill='white')
 def build(before,after,line,out,cb=(0.5,0.3),ca=(0.5,0.4)):
     white,ORANGE=logo()
     b=ImageOps.exif_transpose(Image.open(before)).convert('RGB'); a=ImageOps.exif_transpose(Image.open(after)).convert('RGB')
     # tall 4:5
-    W,H,bar,g=1080,1350,150,8; ph=(H-bar-g)//2
+    W,H,bar,g=1080,1350,236,8; ph=(H-bar-g)//2
     t=Image.new('RGB',(W,H),ORANGE)
     t.paste(ImageOps.fit(b,(W,ph),Image.LANCZOS,centering=cb),(0,0)); t.paste(ImageOps.fit(a,(W,ph),Image.LANCZOS,centering=ca),(0,ph+g))
-    d=ImageDraw.Draw(t); pill(d,'BEFORE',60,34,NAVY,46); pill(d,'AFTER',60,ph+g+34,ORANGE,46); strip(t,d,line,W,H,bar,white)
+    d=ImageDraw.Draw(t); pill(d,'BEFORE',60,34,NAVY,46); pill(d,'AFTER',60,ph+g+34,ORANGE,46); sv,tn=[x.strip() for x in line.split('·')]; strip_big(t,d,sv,tn,W,H,bar,white)
     t.save(out+'-tall.jpg',quality=90)
     # wide for Google
     W,H,bar,g=2000,1280,170,10; pw=(W-g)//2; phh=H-bar
