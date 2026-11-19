@@ -6,5 +6,5 @@
 | 02 | Burgess Hill | Soffit and fascia clean | `2026-11-burgess-hill-soffit-fascia-02-*` | Not yet |
 | 03 | Burgess Hill | Window clean: frames and sills | `2026-11-burgess-hill-windows-sills-03-*` | Not yet |
 | 04 | Burgess Hill | Conservatory roof clean (before photo from inside, after video from above) | `photos/2025-07-burgess-hill-conservatory-roof-04-*` (tall = before/after), `videos/2025-07-burgess-hill-conservatory-roof-04-after.mp4` | Not yet |
-| 05 | Town to confirm | Conservatory roof clean (brown frame) | `photos/conservatory-roof-05-*` (cropped: a framed family photo was visible inside) | Not yet: waiting for town |
-| 06 | Town to confirm | Conservatory roof clean (white lean-to) | `photos/conservatory-roof-06-*` (cropped: storage boxes visible inside) | Reserve: difference is hard to see once cropped |
+| 05 | Burgess Hill | Conservatory roof clean (brown frame) | `photos/burgess-hill-conservatory-roof-05-*` (cropped: a framed family photo was visible inside) | Not yet |
+| 06 | Burgess Hill | Conservatory roof clean (white lean-to) | `photos/burgess-hill-conservatory-roof-06-*` (cropped: storage boxes visible inside) | Reserve: difference is hard to see once cropped |
