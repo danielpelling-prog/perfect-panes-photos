@@ -14,3 +14,5 @@ Notes: build branded images with `python3 brand/make_post.py`. For Instagram vid
 Strip wording: always end the service with the word "clean" (e.g. "Conservatory roof clean · Burgess Hill"). Dan's instruction, 19 Nov 2026.
 
 Wording: say "gutter vacuum", never a brand name (Dan, 20 Nov 2026).
+
+Gutter posts: strip wording is "Gutter clearance", not "Gutter clean" (Dan, 20 Nov 2026). Single-photo posts get the strip too: `python3 brand/make_single.py`.
