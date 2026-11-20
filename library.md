@@ -12,3 +12,5 @@
 
 Notes: build branded images with `python3 brand/make_post.py`. For Instagram video use the jsDelivr address with a commit SHA (not `@main`, which is cached), and pass a branded `cover_url`.
 Strip wording: always end the service with the word "clean" (e.g. "Conservatory roof clean · Burgess Hill"). Dan's instruction, 19 Nov 2026.
+
+Wording: say "gutter vacuum", never a brand name (Dan, 20 Nov 2026).
