@@ -16,3 +16,5 @@ Strip wording: always end the service with the word "clean" (e.g. "Conservatory 
 Wording: say "gutter vacuum", never a brand name (Dan, 20 Nov 2026).
 
 Gutter posts: strip wording is "Gutter clearance", not "Gutter clean" (Dan, 20 Nov 2026). Single-photo posts get the strip too: `python3 brand/make_single.py`.
+
+Strip wording for gutter posts: "Gutter clearance", not "Gutter clean" (Dan, 20 Nov 2026). Single-photo branded images: `python3 brand/make_single.py`.
