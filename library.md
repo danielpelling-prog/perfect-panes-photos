@@ -18,3 +18,5 @@ Wording: say "gutter vacuum", never a brand name (Dan, 20 Nov 2026).
 Gutter posts: strip wording is "Gutter clearance", not "Gutter clean" (Dan, 20 Nov 2026). Single-photo posts get the strip too: `python3 brand/make_single.py`.
 
 Strip wording for gutter posts: "Gutter clearance", not "Gutter clean" (Dan, 20 Nov 2026). Single-photo branded images: `python3 brand/make_single.py`.
+
+Before every post: check it against the Rules tab of the blueprint doc (https://claude.ai/artifact/SKHSZLgHPXKAhRUrCF7NDr#347fea00-0b53): orange strip on the image, wording, no duplicate already live. After every scheduled run, send Dan the handover note described there: Went out / Checked / Waiting on you / Next, under 100 words (Dan, 21 Nov 2026).
